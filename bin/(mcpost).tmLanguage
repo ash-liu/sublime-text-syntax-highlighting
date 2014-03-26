@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>MCPOST</string>
+	</array>
+	<key>name</key>
+	<string>Mastercam (mcpost)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Comment</string>
+			<key>match</key>
+			<string>(#.*$)</string>
+			<key>name</key>
+			<string>comment.number-sign.MCPOST</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Number</string>
+			<key>match</key>
+			<string>[0-9]+(?:\.[0-9]*)?</string>
+			<key>name</key>
+			<string>constant.numeric.MCPOST</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Framework variable</string>
+			<key>match</key>
+			<string>([a-zA-Z0-9]+)(\$)</string>
+			<key>name</key>
+			<string>variable.language.MCPOST</string>
+		</dict>
+		<dict>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.MCPOST</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parametere.MCPOST</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>function</string>
+			<key>match</key>
+			<string>([a-zA-Z0-9]+)(\()(.*)(\))</string>
+			<key>name</key>
+			<string>entity.name.function.MCPOST</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>keywords Attributes</string>
+			<key>match</key>
+			<string>^\[[a-zA-Z0-9]((_?|\-?)[a-zA-Z0-9\s])*(_?|\-?)[a-zA-Z0-9]\]</string>
+			<key>name</key>
+			<string>keyword.MCPOST</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>keywords</string>
+			<key>match</key>
+			<string>(\b)(if|while|for|return)(\b)</string>
+			<key>name</key>
+			<string>keyword.control.MCPOST</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>String</string>
+			<key>match</key>
+			<string>".*?"</string>
+			<key>name</key>
+			<string>string.quoted.double.MCPOST</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>String</string>
+			<key>match</key>
+			<string>\'.*?\'</string>
+			<key>name</key>
+			<string>string.quoted.single.LS</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.MCPOST</string>
+	<key>uuid</key>
+	<string>f25b4ea3-22a6-4cd4-abe1-114a2a850c5a</string>
+</dict>
+</plist>

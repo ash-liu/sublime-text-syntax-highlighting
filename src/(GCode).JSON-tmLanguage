@@ -1,0 +1,25 @@
+{ "name": "GCode",
+  "scopeName": "source.syntax_name",
+  "fileTypes": ["nc"],
+  "patterns": [
+	{ 	
+		"match": "(\\()(.*)(\\))",
+		"name": "comment.number-sign.nc",
+		"comment": "Comment"
+		},
+    
+    {   
+      "match": "(G|F|S|M|T|O|%)[0-9]+",
+      "name": "keyword.nc",
+      "comment": "keywords Attributes"
+    },
+
+    {   
+      "match": "(X|Y|Z|I|J|K)([0-9]+(?:\\.[0-9]*)?)",
+      "name": "variable.language.MCPOST",
+      "comment": "Framework variable"
+    }
+
+  ],
+  "uuid": "32ab95f2-a394-46ee-9e83-9d93b9de5f19"
+}
