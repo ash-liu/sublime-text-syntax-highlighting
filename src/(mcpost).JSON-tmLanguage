@@ -10,11 +10,16 @@
 		},
 
     { 
-        "match": "[0-9]+(?:\\.[0-9]*)?",
+        "match": "(\\b)(zero|one|two|three|four|five|six|seven|height|nine)(\\b)",
         "name": "constant.numeric.MCPOST",
         "comment": "Number"
     },
 
+    { 
+        "match": "(\\b)(-?[0-9]+)(.[0-9]+)?(\\b)",
+        "name": "constant.numeric.MCPOST",
+        "comment": "Number"
+    },
 
     {   
       "match": "([a-zA-Z0-9]+)(\\$)",
@@ -32,6 +37,12 @@
       "comment": "function"
     },
 
+    { 
+      "match": "(\\b)(^p[a-zA-Z]+)(_?([a-zA-Z]+)?)(_?)([a-zA-Z]+)(\\b)",
+      "name": "entity.name.function.MCPOST",
+      "comment": "function"
+    },
+
     {   
       "match": "^\\[[a-zA-Z0-9]((_?|\\-?)[a-zA-Z0-9\\s])*(_?|\\-?)[a-zA-Z0-9]\\]",
       "name": "keyword.MCPOST",
@@ -40,7 +51,7 @@
 
     { 
       "name": "keyword.control.MCPOST",
-      "match": "(\\b)(if|while|for|return)(\\b)",
+      "match": "(\\b)(if|else|while|for|return)(\\b)",
       "comment": "keywords"
     },
 
@@ -52,7 +63,7 @@
 
     { 
         "match": "\\'.*?\\'",
-        "name": "string.quoted.single.LS",
+        "name": "string.quoted.single.MCPOST",
         "comment": "String"
     }
 
