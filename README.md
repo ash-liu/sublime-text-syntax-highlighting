@@ -8,7 +8,7 @@ Installation instruction
 ========================
 
 Copy the content of the bin directory in the following folder:
-<AppData>Roaming\Sublime Text 2\Packages\User
+AppData\Roaming\Sublime Text 2\Packages\User
 
 
 How to use
