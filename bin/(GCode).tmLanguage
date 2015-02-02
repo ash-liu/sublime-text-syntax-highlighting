@@ -36,7 +36,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.syntax_name</string>
+	<string>source.gcode</string>
 	<key>uuid</key>
 	<string>32ab95f2-a394-46ee-9e83-9d93b9de5f19</string>
 </dict>

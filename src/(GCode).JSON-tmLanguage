@@ -1,5 +1,5 @@
 { "name": "GCode",
-  "scopeName": "source.syntax_name",
+  "scopeName": "source.gcode",
   "fileTypes": ["nc"],
   "patterns": [
 	{ 	
